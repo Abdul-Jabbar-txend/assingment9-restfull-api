@@ -1,0 +1,91 @@
+/* TaskList.css */
+
+.task-list {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px; /* Reduced gap for a smaller appearance */
+}
+
+button {
+  padding: 5px 10px; /* Reduced padding for smaller buttons */
+  font-size: 0.8rem; /* Smaller font size */
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+button i {
+  margin-right: 5px; /* Reduced space between icon and text */
+}
+
+/* Button Styling */
+.complete {
+  background-color: #2848a7;
+  color: white;
+}
+
+.complete:hover {
+  background-color: #218838;
+}
+
+.edit {
+  background-color: #2848a7ff;
+  color: white;
+}
+
+.edit:hover {
+  background-color: #0056b3;
+}
+
+.delete {
+  background-color: #dc3545;
+
+  color: white;
+}
+
+.delete:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .task {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-actions button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

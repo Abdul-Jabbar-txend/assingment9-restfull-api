@@ -1,0 +1,100 @@
+/* AddTaskForm CSS */
+
+/* General styling for input and textarea fields */
+input,
+textarea {
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  width: 100%; /* Make the input take the full width */
+  transition: border-color 0.3s ease;
+}
+
+/* You can set a custom width if you'd prefer */
+input,
+textarea {
+  max-width: 600px; /* Add a max width */
+  width: 100%; /* Allow input to be responsive */
+}
+
+/* Focus styles */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
+
+/* Button styles */
+button[type="submit"] {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  background-color: #6c63ff;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #5a54e1;
+}
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* General styling for input and textarea fields */
+input,
+textarea {
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  width: 100%; /* Ensure the field takes up available space */
+  max-width: 600px; /* Limit the maximum width */
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
+
+/* Button styling */
+button[type="submit"] {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  background-color: #6c63ff;
+  color: white;
+  margin-bottom: 15px;
+}
+
+button[type="submit"]:hover {
+  background-color: #5a54e1;
+}
+
+button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+button[type="button"]:hover {
+  background-color: #c82333;
+}
+@media (max-width: 768px) {
+  input,
+  textarea {
+    max-width: 100%; /* Allow full width on smaller screens */
+  }
+}
